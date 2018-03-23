@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativecontainer"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_layout"
+        android:orientation="horizontal"
+        android:padding="5dp">
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:text="currencyname"
+            android:textSize="18dp"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/symbol_layout"
+        android:orientation="horizontal"
+        android:layout_below="@+id/name_layout"
+        android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+        android:text="Symbol:"
+        android:layout_weight="0.5"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="symbol"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+
+        android:gravity="right"
+        android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rank_layout"
+        android:layout_below="@+id/symbol_layout"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/ranktv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rank :"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:text="rank"
+            android:textSize="18dp"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceusd_layout"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rank_layout"
+        android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Price_USD:"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+        android:layout_weight="0.5"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="priceusd"
+        android:textSize="18dp"
+
+        android:gravity="right"
+        android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pricebtc_layout"
+        android:orientation="horizontal"
+        android:layout_below="@+id/priceusd_layout"
+        android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+        android:text="Price_BTC:"
+        android:layout_weight="0.5"/>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pricebtc"
+        android:textSize="18dp"
+
+        android:gravity="right"
+        android:textColor="@color/white"
+
+        android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/marketcap_layout"
+        android:orientation="horizontal"
+        android:layout_below="@+id/pricebtc_layout"
+        android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marketcap"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+        android:textColor="@color/white"
+
+        android:layout_weight="0.5"/>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="marketcap"
+        android:gravity="right"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+
+        android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/avail_supply_layout"
+        android:orientation="horizontal"
+        android:layout_below="@+id/marketcap_layout"
+        android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Supply"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+        android:textColor="@color/white"
+
+        android:layout_weight="0.5"/>
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="availablesupply"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+
+        android:gravity="right"
+        android:layout_weight="0.5"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_supply_layout"
+        android:orientation="horizontal"
+        android:layout_below="@+id/avail_supply_layout"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            android:text="Total Supply"
+            android:layout_weight="0.5"/>
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+
+            android:text="totalsupply"
+            android:gravity="right"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/maxx_supply_layout"
+        android:orientation="horizontal"
+        android:layout_below="@+id/total_supply_layout"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maximum Supply"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            android:layout_weight="0.5"/>
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="maximumsupply"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+
+            android:gravity="right"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/per_change_1h"
+        android:orientation="horizontal"
+        android:layout_below="@+id/maxx_supply_layout"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            android:text="Percentage Change 1H"
+            android:layout_weight="0.5"/>
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="percentage change 1h"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+
+            android:gravity="right"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/per_change_24h"
+        android:orientation="horizontal"
+        android:layout_below="@+id/per_change_1h"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            android:text="Percentage change 24h"
+            android:layout_weight="0.5"/>
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="perchange24h"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+
+            android:gravity="right"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/per_change_7d"
+        android:orientation="horizontal"
+        android:layout_below="@+id/per_change_24h"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Percentage change 7d "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            android:layout_weight="0.5"/>
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="per_change_7d"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+
+            android:gravity="right"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+</RelativeLayout>

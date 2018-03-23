@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.currency.decrypto.SelectedCoinActivity"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/tool_bar"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:background="@color/colorPrimary">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/view_pager"
+        android:background="@color/colorAccent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

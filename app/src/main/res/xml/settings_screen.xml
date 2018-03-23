@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <PreferenceCategory
+        android:title="General Settings"
+        >
+        <EditTextPreference
+            android:title="Enter number of Coins to display"
+            android:key="value_tobe_displayed"
+            android:dialogTitle="NUMBER OF COINS TO DISPLAY"
+
+            android:textColor="#000000"
+            android:background="@color/white">
+
+        </EditTextPreference>
+        <ListPreference
+            android:entries="@array/currencies"
+            android:entryValues="@array/currencies"
+            android:title="Currencies"
+
+            android:key="currency_selection"
+            android:summary="Choose Currency"
+            />
+
+    </PreferenceCategory>
+    <!--<PreferenceCategory android:title="Notification Settings">
+        <SwitchPreference
+            android:title="Receive daily notification"
+            android:defaultValue="true"
+            android:key="notification_alert"
+            android:textColor="#000000">
+
+        </SwitchPreference>
+    </PreferenceCategory>-->
+
+</PreferenceScreen>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chartlayout"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonlayout"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/hbutton"
+        android:text="1H"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_margin="1dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/day7button"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_margin="1dp"
+            android:text="7day"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/d30button"
+        android:text="30days"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_margin="1dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/ybutton"
+            android:text="365 days"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_margin="1dp"/>
+
+    </LinearLayout>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonlayout"/>
+
+   <!-- <com.github.mikephil.charting.charts.BarChart android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/chart"/>-->
+
+</RelativeLayout>

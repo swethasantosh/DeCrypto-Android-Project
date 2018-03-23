@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_coins"
+        android:enabled="true"
+        android:icon="@drawable/ic_coinssymbol"
+        android:title="All Coins"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_news"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_news"
+        android:title="News"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+        app:showAsAction="ifRoom"/>
+   <!-- <item android:id="@+id/action_favorites"
+        android:enabled="true"
+        android:icon="@mipmap/favorite_select"
+        android:title="Favorites"
+        app:showAsAction="ifRoom"/>-->
+
+
+</menu>

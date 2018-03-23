@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.currency.decrypto.MainActivity"
+    android:id="@+id/main_layout">
+    <include
+        layout="@layout/toolbar_layout"
+        android:id="@+id/toolbar_include"/>
+
+    <!-- <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/button"/>
+
+     <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/framelayout" /> -->
+
+   <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemIconTint="@drawable/bottom_nav_color"
+        app:itemTextColor="@drawable/bottom_nav_color"
+        app:menu="@menu/bottom_navigation_main"/>
+
+  <!--  <fragment
+        android:name="com.currency.decrypto.Crypto_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment"/>-->
+
+
+</RelativeLayout>

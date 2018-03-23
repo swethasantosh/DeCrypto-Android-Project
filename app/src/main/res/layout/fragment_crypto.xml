@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="58dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.currency.decrypto.Crypto_Fragment">
+
+   <include
+       layout="@layout/toolbar_layout"
+       android:id="@+id/toolbar_include"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/market_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@+id/toolbar_include"
+            ></android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
+
+    <!-- <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/button"
+         android:text="open bottom sheet"/>-->
+
+
+
+
+
+  <!-- <android.support.v4.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/bottomsheet"
+       android:background="@color/greencolor"
+       app:behavior_hideable="true"
+       app:layout_behavior="@string/bottom_sheet_behavior">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+      <RadioButton
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:id="@+id/sortbyname"
+          android:text="Sort By Name"
+          />
+           <RadioButton
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/sortbyprice"
+               android:text="Sort By Price"
+           />
+           <RadioButton
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/sortbymarketcap"
+               android:text="Sort By marketcap"
+
+               />
+       </LinearLayout>
+
+   </android.support.v4.widget.NestedScrollView>-->
+

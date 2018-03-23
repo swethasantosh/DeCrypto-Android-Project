@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "276059935591",
+    "firebase_url": "https://decrypto-ccef8.firebaseio.com",
+    "project_id": "decrypto-ccef8",
+    "storage_bucket": "decrypto-ccef8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276059935591:android:6ceaea6ed5e46c45",
+        "android_client_info": {
+          "package_name": "com.currency.decrypto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276059935591-7laiigp94b71h2ruhg8icf9n4b2mq841.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.currency.decrypto",
+            "certificate_hash": "ebbab30342ca868e39eeabad589b32966436d457"
+          }
+        },
+        {
+          "client_id": "276059935591-b0cfpnb0at1q3701ran69klf18rn1hg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0Mh-gQ9LLWjTw3AeSD9rYbTVLseApUY0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276059935591-b0cfpnb0at1q3701ran69klf18rn1hg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
