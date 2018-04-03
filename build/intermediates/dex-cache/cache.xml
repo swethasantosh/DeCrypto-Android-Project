@@ -3,129 +3,103 @@
 
     <item
         is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/9060ccf3e9379a08ddc637324228fcc45ff48b4f/output/jars/classes.jar"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/b2f24f98088dba228701500c430db3f2/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_6ff6b0bcff981b43bb1ad2fcaaf4b595e01df9ac.jar" />
+        revision="26.0.2"
+        sha1="9bdfc3e83c6bc1f8bc5807cdaf7e94ac884a2a0d">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/6.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/1cc0a270491ecd70c90bebfeba2fdfde1982bf77/output/jars/classes.jar"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.0.2.aar/90ac0b66aff1c808dfa3907fad220200/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
+        revision="26.0.2"
         sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_4dd9bea77b80ea102bf9970fde3e9b03a13e8419.jar" />
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/13.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/4cec50f41988c297edc2259574ff66bba25f984b/output/jars/classes.jar"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.1.1.aar/aef70374b514ffc54c7984d33fef5a04/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_c00ba3ebcd00945da6d35b0e848a856ce431b0cf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/ddaeff11008ff60e9eeb19ed145ecc1b61de4428/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_ec2b28f62de4f93924062eee831f267d8d709d1c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/0ecf02b4d11c7735c2688f96c1d3404b92f56f7e/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_293537910eaaa0b10ff113ee46ca314874e37f2b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/3cb3373b339ab503729029edc0ed3b5641fb32be/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_79b28f9d4a43ae33fe51d625d6d59a2ca445b8bf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/c8ab74b1e5de920587a7027f08d9760e66c55514/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_48eaec6897c07de10b4fa253016689ede0daacb3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/93d49105d96edba7b15f86e854eb3d1ff5a67e7e/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
+        revision="26.0.2"
         sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_b0ef6aa0193f945b4593b5afde2ab0539b47d480.jar" />
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/4.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/1c5ae8a67bc6da7670267ad08915349170592f43/output/jars/classes.jar"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/0cdec95363f3262934accc45ad16e253/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_2f15b5bca1a3cea5b769e2a6d824f0ea61bd82ac.jar" />
+        revision="26.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/22.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/90fffc508f07e5032d62ccff4c4a0cb4ddab61ab/output/jars/classes.jar"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.1.1.aar/fb3fcf32496bf58d5c9b5750ff1822a8/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
-        sha1="f2774b1e02e5fbc524590311a744263c3b152d63">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_1bea0baf0b4e6301ba7ee76f43f6b88ef5516eee.jar" />
+        revision="26.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/25.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/3e7aed4c1256e08db97c7cd36011523848b36a8c/output/jars/classes.jar"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.1.1.aar/d8538563490eb8e6d0318d3bc141f6ba/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
-        sha1="8531f2d46b35de75e6130f25830e0c2c0d6bb98c">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_ac4223b35aecafc74aee2395f4b0875ff09d5dcf.jar" />
+        revision="26.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/24.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/fbcd71fa77687eba029488d66e0f2d76198f49e9/output/jars/classes.jar"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/firebase-analytics-9.0.2.aar/98baa0a5048be6951f0c92c60943cc10/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
+        revision="26.0.2"
         sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_a911908b81ea04daa81f256d303246677354c7bf.jar" />
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/11.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/7c4447a7da6c17c5b2114258203a5cba78fd4235/output/jars/classes.jar"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
+        revision="26.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0e2e0275c226f8f86c31c7b068aaa15d/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/52718ef3670591dcb174f87747f0c2bf/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_16c3f75ba72729c09afc457603dc95412a1b1b71.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/d33101c9d61af8112530cb526a17a3b1b9873f54/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_bbf02b0e61d576b12663f2cc218e5c0b21b80e6c.jar" />
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/18.jar" />
     </item>
     <item
         is-multidex="true"
@@ -138,75 +112,63 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/71869eb9a278ce385abae0f685d4449eef37c9c5/output/jars/classes.jar"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/transition-25.1.1.aar/32c033beafcfec64da06a7737bf40ecf/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
-        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_eddfb175f2b1e4ffbeaa3dcf64a33ba9b69e6d62.jar" />
+        revision="26.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/ac4f0d4d4f5fe2ece7cef080518319847e938fdc/output/jars/classes.jar"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/abd33111f532d3ea0dba1a9fd402fcf0/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_b715cb1515b47c0480843c8941edc91b06bdef3b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/64dfe9faaa93b4de6dbd5982ab62ee2e64da64df/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_347e65ac484ad2bf331e9facc987d634b91b8e4a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/4dfbdcec89c7f698178a8f3fab2bf55187674448/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_7b39c45da8bdc84b9d5fa9465d1399251d46d981.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/b3320854230e8544a9e5480505cf0483222bc1a2/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
+        revision="26.0.2"
         sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_fd73466d3cc9037d01608ad3268041c7cb275216.jar" />
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/swetha/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.2.aar/2ad61688b7c6b8053652899decc2dca7/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/c50cf14b4a8d54991ccfba45890065bd/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/27.jar" />
     </item>
     <item
         is-multidex="false"
         jar="/Users/swetha/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
+        revision="26.0.2"
         sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/constraint-layout-solver-1.0.2_3dcb8df16f52e65e30ecd0ed8b2906bc20d802fd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/47b277fd2c1ab6b2f97153d3a4ef69c302c876bb/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_0ce84ffbecb82f0948bbe45cd328f2acb6fcf1b6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/3b0b8c5b97cd1df065d1115ab801f1eea61926f6/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_376b8212db6a74e76783c14f82df0e57429ad7ed.jar" />
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/20.jar" />
     </item>
     <item
         is-multidex="true"
@@ -219,39 +181,113 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/22fb446d9c804fcc8cb57149a6114914b559e519/output/jars/classes.jar"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.1.1.aar/9fc674a9b4991e7d5375f5bca12dba06/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
-        sha1="9bdfc3e83c6bc1f8bc5807cdaf7e94ac884a2a0d">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_ab321332199c8d96e0d4dbb8dc9532dd123b9d74.jar" />
+        revision="26.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/9b5e8c3cc2d46a441dea8c0df96301b8/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/firebase-common-9.0.2.aar/6023d5cafee749c678280a705e516986/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.0.2.aar/042da18270fc8d6ac56464c7187055d5/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/support-v13-25.3.1.aar/1898ed656bfe8941227a4816868fdb8b/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8531f2d46b35de75e6130f25830e0c2c0d6bb98c">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.0.2.aar/4b992c7625d65c07408e9ea764dfb020/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f2774b1e02e5fbc524590311a744263c3b152d63">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/6d3606599811fc14f6783c668bac5d71/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/26.jar" />
     </item>
     <item
         is-multidex="false"
         jar="/Users/swetha/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v2.0.9/4244e2998018aa492389e8e30a77b7987959608e/MPAndroidChart-v2.0.9.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
+        revision="26.0.2"
         sha1="4244e2998018aa492389e8e30a77b7987959608e">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/MPAndroidChart-v2.0.9_1151f26b463e6551ba91fccf47566e8d2d3f2042.jar" />
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/1.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/swetha/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-9.0.2.aar/c8a2862932dd880f177167ce38797807/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/support-annotations-25.3.1_ef2df160077e91e086ef8cc44920fdf4e64d9684.jar" />
+        revision="26.0.2"
+        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/12.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/swetha/.android/build-cache/adcfe6044ae9fb363d2d094c7b8496f921540734/output/jars/classes.jar"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/design-25.1.1.aar/4a63e3ab78b9906ad198e9924c8187c6/jars/classes.jar"
         jumboMode="false"
+        min-sdk-version="15"
         optimize="true"
-        revision="25.0.2"
-        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
-        <dex dex="/Users/swetha/AndroidStudioProjects/Decrypto/app/build/intermediates/pre-dexed/release/classes_ead72166a9e5d78ab169e0723e6d3d69a7fbb833.jar" />
+        revision="26.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/swetha/.gradle/caches/transforms-1/files-1.1/play-services-tasks-9.0.2.aar/8797dd16fd3733f744c41d815faede3a/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="/Users/swetha/Downloads/Decrypto-Android-Project/app/build/intermediates/transforms/preDex/release/16.jar" />
     </item>
 
 </items>

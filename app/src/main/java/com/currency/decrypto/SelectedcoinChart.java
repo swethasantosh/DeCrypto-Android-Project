@@ -55,7 +55,7 @@ import java.util.Locale;
  * Created by swetha on 1/9/18.
  */
 
-public class SelectedcoinChart extends Fragment implements OnChartGestureListener, OnChartValueSelectedListener {
+public class SelectedcoinChart extends Fragment implements  OnChartGestureListener, OnChartValueSelectedListener {
     //static String url = "https://min-api.cryptocompare.com/data/histohour?fsym=BTC&tsym=USD&limit=60&aggregate=3&e=CCCAGG";
     String url = null;
     static ArrayList<String> time_list = new ArrayList<>();
@@ -105,6 +105,8 @@ public class SelectedcoinChart extends Fragment implements OnChartGestureListene
     }
 
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState)
     {
@@ -118,7 +120,12 @@ public class SelectedcoinChart extends Fragment implements OnChartGestureListene
         Button ybutton = (Button)v.findViewById(R.id.ybutton);
 
 
-        daybutton.setOnClickListener(
+
+
+
+
+
+       daybutton.setOnClickListener(
                 new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -128,6 +135,11 @@ public class SelectedcoinChart extends Fragment implements OnChartGestureListene
 
             }
         });
+
+
+
+
+
         d30button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -414,7 +426,8 @@ public class SelectedcoinChart extends Fragment implements OnChartGestureListene
 
     }
     @NonNull
-    static String getChartDescription(Context context) {
+    static String getChartDescription(Context context)
+    {
         String selectedCoinSymbol = "BTC";
         String currencyPreference ="BTC";
         if (selectedCoinSymbol.equals("BTC") && currencyPreference.equals("BTC"))
@@ -424,14 +437,15 @@ public class SelectedcoinChart extends Fragment implements OnChartGestureListene
         return selectedCoinSymbol + "/" + currencyPreference;
     }
 
-    static void setChartDescription(Context context, LineChart chart) {
+    static void setChartDescription(Context context, LineChart chart)
+    {
         chart.setDescription(getChartDescription(context));
         //chart.setDescriptionColor(-1);
         chart.setNoDataTextDescription("something_went_wrong");
     }
-    static void setChartAxisStyle(LineChart chart) {
+    static void setChartAxisStyle(LineChart chart)
+    {
         chart.getXAxis().setTextColor(-1);
-
         chart.getAxisRight().setTextColor(-1);
         chart.getAxisLeft().setEnabled(false);
     }

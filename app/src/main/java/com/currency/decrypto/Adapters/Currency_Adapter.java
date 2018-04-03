@@ -134,123 +134,173 @@ public class Currency_Adapter extends RecyclerView.Adapter<Currency_Adapter.View
          switch (selectedcurrency)
          {
              case "AUD":
-                 holder.price_selection.setText(current_currency.getPrice_aud()+" A$");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_aud())*100.0)/100.0)+" A$");
+
+                 // holder.price_selection.setText(String.valueOf(Math.round(Float.parseFloat(current_currency.getPrice_aud())))+" A$");
                  break;
              case "USD":
-                 holder.price_selection.setText(current_currency.getPrice_usd()+" $");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_usd())*100.0)/100.0)+" $");
                  break;
              case "INR":
-                 holder.price_selection.setText( String.valueOf(Math.round(Float.parseFloat(current_currency.getPrice_inr())))+" ₹");
-                //holder.price_selection.setText(current_currency.getPrice_inr()+"₹");
-                 //holder.price_selection.setText(Math.round(Float.parseFloat(current_currency.getPrice_inr())));
-
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_inr())*100.0)/100.0)+" ₹");
+                 //holder.price_selection.setText( String.valueOf(Math.round(Float.parseFloat(current_currency.getPrice_inr())))+" ₹");
                  break;
              case "MYR":
-                 holder.price_selection.setText(current_currency.getPrice_myr()+" RM");
-
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_myr())*100.0)/100.0)+" RM");
+                 //holder.price_selection.setText(current_currency.getPrice_myr()+" RM");
                  break;
              case "EUR":
-                 holder.price_selection.setText(current_currency.getPrice_eur()+" €");
-
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_eur())*100.0)/100.0)+" €");
+                 //holder.price_selection.setText(current_currency.getPrice_eur()+" €");
                  break;
              case "BRL":
-                 holder.price_selection.setText(current_currency.getPrice_brl()+" R$");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_brl())*100.0)/100.0)+" R$");
+
+                 //holder.price_selection.setText(current_currency.getPrice_brl()+" R$");
 
                  break;
              case "CAD":
-                 holder.price_selection.setText(current_currency.getPrice_cad()+" C$");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_cad())*100.0)/100.0)+" C$");
+
+                 //holder.price_selection.setText(current_currency.getPrice_cad()+" C$");
 
                  break;
              case "CHF":
-                 holder.price_selection.setText(current_currency.getPrice_chf()+" Fr");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_chf())*100.0)/100.0)+" Fr");
+
+                 //holder.price_selection.setText(current_currency.getPrice_chf()+" Fr");
 
                  break;
              case "CLP":
-                 holder.price_selection.setText(current_currency.getPrice_clp()+" $");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_clp())*100.0)/100.0)+" $");
+
+                 //holder.price_selection.setText(current_currency.getPrice_clp()+" $");
 
                  break;
              case "CNY":
-                 holder.price_selection.setText(current_currency.getPrice_cny()+" ¥");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_cny())*100.0)/100.0)+" ¥");
+
+                // holder.price_selection.setText(current_currency.getPrice_cny()+" ¥");
 
                  break;
              case "CZK":
-                 holder.price_selection.setText(current_currency.getPrice_czk()+" Kč");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_czk())*100.0)/100.0)+" Kč");
+
+                 //holder.price_selection.setText(current_currency.getPrice_czk()+" Kč");
 
                  break;
              case "DKK":
+                 //holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_dkk())*100.0)/100.0)+" kr");
+
                  holder.price_selection.setText(current_currency.getPrice_dkk()+" kr");
 
                  break;
              case "GBP":
-                 holder.price_selection.setText(current_currency.getPrice_gbp()+" £");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_gbp())*100.0)/100.0)+" £");
+
+                // holder.price_selection.setText(current_currency.getPrice_gbp()+" £");
 
                  break;
              case "HKD":
-                 holder.price_selection.setText(current_currency.getPrice_hkd()+" HK$");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_hkd())*100.0)/100.0)+" HK$");
+
+                // holder.price_selection.setText(current_currency.getPrice_hkd()+" HK$");
 
                  break;
              case "HUF":
-                 holder.price_selection.setText(current_currency.getPrice_huf()+" €");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_huf())*100.0)/100.0)+" €");
+
+                 //holder.price_selection.setText(current_currency.getPrice_huf()+" €");
 
                  break;
              case "IDR":
-                 holder.price_selection.setText(current_currency.getPrice_idr()+" Rp");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_idr())*100.0)/100.0)+" Rp");
+
+                 //holder.price_selection.setText(current_currency.getPrice_idr()+" Rp");
 
                  break;
              case "ILS":
-                 holder.price_selection.setText(current_currency.getPrice_ils()+" ₪");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_ils())*100.0)/100.0)+" ₪");
+
+                 //holder.price_selection.setText(current_currency.getPrice_ils()+" ₪");
 
                  break;
              case "JPY":
-                 holder.price_selection.setText(current_currency.getPrice_jpy()+" ¥");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_jpy())*100.0)/100.0)+" ¥");
+
+                 //holder.price_selection.setText(current_currency.getPrice_jpy()+" ¥");
 
                  break;
              case "KRW":
-                 holder.price_selection.setText(current_currency.getPrice_krw()+" ₩");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_krw())*100.0)/100.0)+" ₩");
+
+                 //holder.price_selection.setText(current_currency.getPrice_krw()+" ₩");
 
                  break;
              case "MXN":
-                 holder.price_selection.setText(current_currency.getPrice_mxn()+" $");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_mxn())*100.0)/100.0)+" Mex$");
+
+                 //holder.price_selection.setText(current_currency.getPrice_mxn()+" Mex$");
 
                  break;
              case "NZD":
-                 holder.price_selection.setText(current_currency.getPrice_nzd()+" $");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_nzd())*100.0)/100.0)+" $");
+
+                // holder.price_selection.setText(current_currency.getPrice_nzd()+" $");
 
                  break;
              case "NOK":
-                 holder.price_selection.setText(current_currency.getPrice_nok()+" kr");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_nok())*100.0)/100.0)+" kr");
+
+                 //holder.price_selection.setText(current_currency.getPrice_nok()+" kr");
 
                  break;
              case "PLN":
-                 holder.price_selection.setText(current_currency.getPrice_pln()+" zł");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_pln())*100.0)/100.0)+"  zł");
+
+                 //holder.price_selection.setText(current_currency.getPrice_pln()+" zł");
 
                  break;
              case "RUB":
-                 holder.price_selection.setText(current_currency.getPrice_rub()+" \u20BD");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_rub())*100.0)/100.0)+" \u20BD");
+
+                 //holder.price_selection.setText(current_currency.getPrice_rub()+" \u20BD");
 
                  break;
              case "SEK":
-                 holder.price_selection.setText(current_currency.getPrice_sek()+" kr");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_sek())*100.0)/100.0)+" kr");
+
+                // holder.price_selection.setText(current_currency.getPrice_sek()+" kr");
 
                  break;
              case "SGD":
-                 holder.price_selection.setText(current_currency.getPrice_sgd()+" $");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_sgd())*100.0)/100.0)+" S$");
+
+                 //holder.price_selection.setText(current_currency.getPrice_sgd()+" S$");
 
                  break;
              case "THB":
-                 holder.price_selection.setText(current_currency.getPrice_thb()+" ฿");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_thb())*100.0)/100.0)+" ฿");
+
+                 //holder.price_selection.setText(current_currency.getPrice_thb()+" ฿");
 
                  break;
              case "TRY":
-                 holder.price_selection.setText(current_currency.getPrice_try()+" TRY");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_try())*100.0)/100.0)+" ₺");
+
+                // holder.price_selection.setText(current_currency.getPrice_try()+" ₺");
 
                  break;
              case "TWD":
-                 holder.price_selection.setText(current_currency.getPrice_twd()+" NT$");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_twd())*100.0)/100.0)+" NT$");
+
+                 //holder.price_selection.setText(current_currency.getPrice_twd()+" NT$");
 
                  break;
              case "ZAR":
-                 holder.price_selection.setText(current_currency.getPrice_zar()+" R");
+                 holder.price_selection.setText( String.valueOf(Math.round(Double.parseDouble(current_currency.getPrice_zar())*100.0)/100.0)+" R");
+
+                 //holder.price_selection.setText(current_currency.getPrice_zar()+" R");
 
                  break;
 
@@ -344,7 +394,7 @@ public class Currency_Adapter extends RecyclerView.Adapter<Currency_Adapter.View
                 switch (selectedcurrency)
                 {
                     case "AUD":
-                        currency_value = currencylist.get(getPosition()).getPrice_usd();
+                        currency_value = currencylist.get(getPosition()).getPrice_aud();
 
                         break;
                     case "USD":

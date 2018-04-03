@@ -29,7 +29,7 @@ public class LauncherSettings extends AppCompatActivity
         {
 
             pref.edit().putBoolean("firstrun", false).commit();
-            startActivity(new Intent(this , Settings_Screen.class));
+            startActivity(new Intent(this , LauncherSettingsScreen.class));
             finish();
         }
         else {

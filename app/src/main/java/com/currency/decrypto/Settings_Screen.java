@@ -2,8 +2,11 @@ package com.currency.decrypto;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.EditTextPreference;
+import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
@@ -47,21 +50,47 @@ public class Settings_Screen extends AppCompatActivity
 
     }
 
-    public static class SettingsFragment extends PreferenceFragment
+    public static class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener
     {
 
 
         @Override
-        public void onCreate(Bundle savedInstancestate) {
+        public void onCreate(Bundle savedInstancestate)
+        {
             super.onCreate(savedInstancestate);
 
             addPreferencesFromResource(R.xml.settings_screen);
+            SharedPreferences sp = getPreferenceScreen().getSharedPreferences();
+            EditTextPreference editTextPreference = (EditTextPreference)findPreference("value_tobe_displayed");
+            editTextPreference.setSummary(sp.getString("value_tobe_displayed","100"));
 
+        }
+        public void onResume()
+        {
+            super.onResume();
+            getPreferenceScreen().getSharedPreferences().registerOnSharedPreferenceChangeListener(this);
+
+        }
+        public void onPause()
+        {
+            super.onPause();
+            getPreferenceScreen().getSharedPreferences().registerOnSharedPreferenceChangeListener(this);
+
+        }
+        public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,String key)
+        {
+            Preference pref = findPreference(key);
+            if(pref instanceof  EditTextPreference)
+            {
+                EditTextPreference etp = (EditTextPreference) pref;
+                pref.setSummary(etp.getText());
+            }
         }
     }
 
-    @Override
-    public void onBackPressed() {
+   /* @Override
+    public void onBackPressed()
+    {
         startActivity(new Intent(this,MainActivity.class));
-    }
+    }*/
 }

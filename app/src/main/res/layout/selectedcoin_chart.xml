@@ -24,8 +24,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/day7button"
-            android:background="@color/colorPrimary"
             android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:layout_margin="1dp"
             android:text="7day"/>
     <Button

@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:id="@+id/launchersettings"
+    android:background="@color/colorPrimary"
+    android:layout_margin="15dp">
+    <!--<include
+        layout="@layout/toolbar_layout"
+        android:id="@+id/toolbar_include"/>-->
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentlaout"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/laterbtn"
+            android:layout_height="wrap_content"
+            android:text="Later"
+            android:layout_gravity="bottom|center_horizontal"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/okbutton"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_gravity="bottom|center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>

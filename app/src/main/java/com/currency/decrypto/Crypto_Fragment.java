@@ -335,7 +335,7 @@ public class Crypto_Fragment extends Fragment implements  Currency_Adapter.Click
                              break;
                         case "DKK":
                             price_common = jsonObject.getString(KEY_PRICE_DKK);
-                            currency.setPrice_inr(price_common);
+                            currency.setPrice_dkk(price_common);
                             break;
                         case "GBP":
                             price_common = jsonObject.getString(KEY_PRICE_GBP);

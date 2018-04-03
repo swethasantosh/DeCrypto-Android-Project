@@ -315,7 +315,7 @@
             android:textStyle="bold"
             android:textSize="18dp"
 
-            android:text="Percentage change 24h"
+            android:text="Percentage change 1D"
             android:layout_weight="0.5"/>
         <TextView
             android:id="@+id/textView28"
@@ -340,7 +340,7 @@
             android:id="@+id/textView29"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Percentage change 7d "
+            android:text="Percentage change 1W "
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="18dp"
