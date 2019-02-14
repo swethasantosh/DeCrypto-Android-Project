@@ -3,14 +3,18 @@ package com.currency.decrypto.Fragments;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,8 +25,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.currency.decrypto.Adapters.News_adapter;
-import com.currency.decrypto.Crypto_Fragment;
 import com.currency.decrypto.Models.News;
 import com.currency.decrypto.News_openActivity;
 import com.currency.decrypto.R;
@@ -31,12 +35,21 @@ import com.currency.decrypto.VolleySingleton;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
@@ -57,6 +70,17 @@ public class News_fragment extends Fragment implements News_adapter.Clicklistene
     private RequestQueue requestQueue;
     //Arraylist to store list of  markets
     private ArrayList<News> list_articles = new ArrayList<>();
+
+
+
+    private ArrayList<News> list_articles2 = new ArrayList<>();
+    private ArrayList<News> list_articles3 = new ArrayList<>();
+
+    private ArrayList<News> list_articles_new = new ArrayList<>();
+
+
+
+
     private RecyclerView news_list;
     //adapter for customized list
     private News_adapter news_adapter;
@@ -65,8 +89,16 @@ public class News_fragment extends Fragment implements News_adapter.Clicklistene
 
 
     //url
+    public static final String url2= "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fcryptodaily.co.uk%2Ffeed";
+
+    public static final String url3= "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.crypto-reporter.com%2Fnews%2Ffeed%2F";
+
+
+
+
     //public static final String url = "https://api.cryptonator.com/api/full/btc-usd";
     public static final String url = "https://min-api.cryptocompare.com/data/news/";
+
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -99,6 +131,12 @@ public class News_fragment extends Fragment implements News_adapter.Clicklistene
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
+
+
+
+
+
+
         //send volley json request
         volleySingleton = VolleySingleton.getsInstance();
         //initialize request
@@ -125,8 +163,62 @@ public class News_fragment extends Fragment implements News_adapter.Clicklistene
         }, 6000);
 
 
+
+
+
         //json array request
-        JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
+        JsonObjectRequest request3 = new JsonObjectRequest(Request.Method.GET, url3, null, new Response.Listener<JSONObject>()
+        {
+            @Override
+            public void onResponse(JSONObject response3)
+            {
+
+                progressDialog.dismiss();
+                parseJsonResponse3(response3);
+                list_articles3 = parseJsonResponse3(response3);
+                //news_adapter.setArticlelist(list_articles2);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        requestQueue.add(request3);
+
+
+
+
+        //json array request
+        JsonObjectRequest request2 = new JsonObjectRequest(Request.Method.GET, url2, null, new Response.Listener<JSONObject>()
+        {
+            @Override
+            public void onResponse(JSONObject response2)
+            {
+
+                progressDialog.dismiss();
+                parseJsonResponse2(response2);
+                list_articles2 = parseJsonResponse2(response2);
+                //news_adapter.setArticlelist(list_articles2);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        requestQueue.add(request2);
+
+
+
+
+
+
+
+
+        //json array request
+        JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>()
+        {
             @Override
             public void onResponse(JSONArray response)
             {
@@ -134,7 +226,32 @@ public class News_fragment extends Fragment implements News_adapter.Clicklistene
                 progressDialog.dismiss();
                 parseJsonResponse(response);
                 list_articles = parseJsonResponse(response);
-                news_adapter.setArticlelist(list_articles);
+
+
+                list_articles_new.addAll(list_articles3);
+
+
+                list_articles_new.addAll(list_articles2);
+                list_articles_new.addAll(list_articles);
+
+
+
+//sort by date
+                Collections.sort(list_articles_new, new Comparator<News>() {
+                    @Override
+                    public int compare(News u1, News u2) {
+                        return u2.getPublished_on().compareTo(u1.getPublished_on());
+                    }
+                });
+
+
+
+
+                news_adapter.setArticlelist(list_articles_new);
+
+
+
+                //news_adapter.setArticlelist(list_articles);
             }
         }, new Response.ErrorListener() {
             @Override
@@ -147,11 +264,141 @@ public class News_fragment extends Fragment implements News_adapter.Clicklistene
 
         //add json request to requestqeue
         requestQueue.add(request);
+        
 
     }
 
     //change return type from void to arraylist of currency
     //private void parseJsonResponse(JSONObject response) {
+
+
+
+
+
+
+
+
+
+
+    private ArrayList<News> parseJsonResponse2(JSONObject response2)
+    {
+
+        ArrayList<News> list_articles2 = new ArrayList<>();
+        if(response2 !=null && response2.length() > 0)
+        {
+
+            try {
+
+                JSONArray items = response2.getJSONArray(KEY_ITEMS);
+                for(int i = 0;i < items.length();i++)
+                {
+                    JSONObject jsonObject = items.getJSONObject(i);
+
+                    String title =jsonObject.getString(KEY_TITLE);
+                    String websitename = jsonObject.getString(KEY_SOURCE2);
+                    String imageurl = jsonObject.getString(KEY_IMAGEURL2);
+                    String body = jsonObject.getString(KEY_BODY2).replaceAll("\\<.*?>","");
+                    String news_url = jsonObject.getString(KEY_URL2);
+                    //convert from string
+                    String time = jsonObject.getString(KEY_PUBLISHEDON2);
+
+
+                    DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+                    Date date = (Date)formatter.parse(time);
+                    SimpleDateFormat newFormat = new SimpleDateFormat("MM/dd   hh:mm a");
+
+                    String finalString = newFormat.format(date);
+
+                    News news = new News();
+                    //initialize using setter methods
+
+                    news.setTitle(title);
+                    news.setPublished_on(finalString);
+                    //news.setPublished_on(newtime);
+                    news.setSource(websitename);
+                    news.setImageurl(imageurl);
+                    news.setUrl(news_url);
+                    news.setBody(body);
+
+                    list_articles2.add(news);
+                }
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            swipeRefreshLayout.setRefreshing(false);
+
+
+        }
+        return list_articles2;
+
+    }
+
+
+
+
+
+
+    private ArrayList<News> parseJsonResponse3(JSONObject response3)
+    {
+
+        ArrayList<News> list_articles3 = new ArrayList<>();
+        if(response3 !=null && response3.length() > 0)
+        {
+
+            try {
+
+                JSONArray items = response3.getJSONArray(KEY_ITEMS);
+                for(int i = 0;i < items.length();i++)
+                {
+                    JSONObject jsonObject = items.getJSONObject(i);
+
+                    String title =jsonObject.getString(KEY_TITLE);
+                    String websitename = jsonObject.getString(KEY_SOURCE2);
+                    String imageurl = jsonObject.getString(KEY_IMAGEURL2);
+                    String body = jsonObject.getString(KEY_BODY2).replaceAll("\\<.*?>","");
+                    String news_url = jsonObject.getString(KEY_URL2);
+                    //convert from string
+                    String time = jsonObject.getString(KEY_PUBLISHEDON2);
+
+
+                    DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+                    Date date = (Date)formatter.parse(time);
+                    SimpleDateFormat newFormat = new SimpleDateFormat("MM/dd   hh:mm a");
+
+                    String finalString = newFormat.format(date);
+
+                    News news = new News();
+                    //initialize using setter methods
+
+                    news.setTitle(title);
+                    news.setPublished_on(finalString);
+                    //news.setPublished_on(newtime);
+                    news.setSource(websitename);
+                    news.setImageurl(imageurl);
+                    news.setUrl(news_url);
+                    news.setBody(body);
+
+                    list_articles3.add(news);
+                }
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            swipeRefreshLayout.setRefreshing(false);
+
+
+        }
+        return list_articles3;
+
+    }
+
 
 
 
@@ -196,7 +443,8 @@ public class News_fragment extends Fragment implements News_adapter.Clicklistene
 
 
                     long time_long = Long.valueOf(time).longValue()*1000;
-                    DateFormat dateFormat =  new SimpleDateFormat("hh:mm a",Locale.getDefault());
+                    DateFormat dateFormat =  new SimpleDateFormat("MM/dd  hh:mm a",Locale.getDefault());
+
                     String localtime = dateFormat.format(new Date(time_long));
 
 
@@ -325,6 +573,7 @@ public class News_fragment extends Fragment implements News_adapter.Clicklistene
 
 
     }
+
 
 }
 
