@@ -228,16 +228,16 @@ public class News_fragment extends Fragment implements News_adapter.Clicklistene
                 list_articles = parseJsonResponse(response);
 
 
-                list_articles_new.addAll(list_articles3);
+                list_articles.addAll(list_articles2);
 
 
-                list_articles_new.addAll(list_articles2);
-                list_articles_new.addAll(list_articles);
+                list_articles.addAll(list_articles3);
+                //list_articles.addAll(list_articles);
 
 
 
 //sort by date
-                Collections.sort(list_articles_new, new Comparator<News>() {
+                Collections.sort(list_articles, new Comparator<News>() {
                     @Override
                     public int compare(News u1, News u2) {
                         return u2.getPublished_on().compareTo(u1.getPublished_on());
@@ -247,7 +247,7 @@ public class News_fragment extends Fragment implements News_adapter.Clicklistene
 
 
 
-                news_adapter.setArticlelist(list_articles_new);
+                news_adapter.setArticlelist(list_articles);
 
 
 

@@ -15,5 +15,22 @@ public class News_keys
         public static final String KEY_URL = "url";
         public static final String KEY_BODY = "body";
         public static final String KEY_SOURCE = "source";
+
+
+
+
+        public static final String KEY_ITEMS = "items";
+        public static final String KEY_URL2= "link";
+        public static final String KEY_PUBLISHEDON2 = "pubDate";
+        public static final String KEY_IMAGEURL2 = "thumbnail";
+        public static final String KEY_BODY2 = "description";
+
+        public static final String KEY_SOURCE2 = "author";
+
+
+
+
+
+
     }
 }
